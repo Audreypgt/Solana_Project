@@ -42,26 +42,25 @@ select {
 
 /* Active navigation link */
 .active {
-  @apply text-[#43b083] dark:text-[#14F195];
+  @apply text-[#A1389C] dark:text-[#782B74];
 }
 
 /* Custom Wallet Button */
 .mymultibutton {
-  @apply bg-black text-white hover:text-black hover:bg-builderz-blue !important;
-  border: 1px solid black !important;
+  @apply bg-pink-400 text-white hover:text-pink-400 hover:bg-white !important;
+  border: 1px solid pink !important;
 }
 
 /* Body styles */
 body {
   font-family: "Inter", sans-serif;
-  @apply bg-light-mesh dark:bg-mesh text-black dark:text-white selection:bg-builderz-blue selection:text-white selection:px-4 dark:selection:text-black;
-  /* margin: 0; */
+  @apply bg-pink-100 dark:bg-pink-900 text-pink-400 dark:text-white selection:bg-pink-400 selection:text-white selection:px-4 dark:selection:text-white;
   height: 100vh;
   /* Fluid Fonts */
   font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 125%;
+  letter-spacing: normal;
   line-height: 135%;
 }
 
@@ -70,21 +69,21 @@ h1 {
   font-size: calc(30px + (36 - 30) * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 900;
-  letter-spacing: 125%;
+  letter-spacing: normal;
   line-height: calc(36px + (40 - 36) * ((100vw - 320px) / (1280 - 320)));
 }
 h2 {
   font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 800;
-  letter-spacing: 125%;
+  letter-spacing: normal;
   line-height: calc(34px + (38 - 34) * ((100vw - 320px) / (1280 - 320)));
 }
 h3 {
   font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 125%;
+  letter-spacing: normal;
   line-height: calc(28px + (32 - 28) * ((100vw - 320px) / (1280 - 320)));
 }
 
@@ -113,15 +112,15 @@ body::-webkit-scrollbar-thumb {
 
 /* NavigationLink Hover */
 .navLink {
-  @apply px-2 py-1 rounded-md hover:text-[#43b083] dark:hover:text-[#14F195] bg-opacity-20;
+  @apply px-2 py-1 rounded-md hover:text-[#C868DE] dark:hover:text-[#C868DE] bg-opacity-20;
 }
 
 /* Glow Buttons */
 .glow-on-hover {
-  @apply bg-transparent text-black dark:text-white hover:text-white;
+  @apply bg-transparent text-pink-400 dark:text-white hover:text-white;
   height: 50px;
   min-width: 150px;
-  border: 1px solid gray;
+  border: 1px solid pink;
   outline: none;
 
   cursor: pointer;
@@ -130,7 +129,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 .glow {
-  @apply text-black dark:text-white;
+  @apply text-pink-400 dark:text-white;
   min-width: 150px;
   height: 50px;
   border: none;
@@ -219,7 +218,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .glow-on-hover:after {
-  @apply bg-transparent text-black dark:text-white;
+  @apply bg-transparent text-pink-400 dark:text-white;
   z-index: -1;
   content: "";
   position: absolute;
@@ -230,7 +229,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 .glow:after {
-  @apply bg-transparent text-black dark:text-white;
+  @apply bg-transparent text-pink-400 dark:text-white;
   z-index: -1;
   content: "";
   position: absolute;
@@ -254,23 +253,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 .css-i4bv87-MuiSvgIcon-root {
-  @apply text-black dark:text-white !important;
+  @apply text-pink-400 dark:text-white !important;
 }
 
-.meshBg {
-  background: #0a0924;
-  background-image: radial-gradient(at 47% 96%, #151b40 0px, transparent 50%),
-    radial-gradient(at 61% 15%, #09162b 0px, transparent 50%),
-    radial-gradient(at 8% 16%, #0f1930 0px, transparent 50%),
-    radial-gradient(at 85% 28%, #110c3d 0px, transparent 50%),
-    radial-gradient(at 81% 66%, #060d1f 0px, transparent 50%);
-}
+/* .meshBg {
+ 	background: #fce4ec;
+ 	background-image:radial-gradient(at 30% 30%, #f8bbd0 0px, transparent 50%),
+ 		radial-gradient(at 70% 70%, #f48fb1 0px, transparent 50%);
+  background: #C868DE;
+  background-image: radial-gradient(at 47% 96%, #C868DE 0px, transparent 50%),
+  radial-gradient(at 61% 15%, #C868DE 0px, transparent 50%),
+  radial-gradient(at 8% 16%, #C868DE 0px, transparent 50%),
+  radial-gradient(at 85% 28%, #C868DE 0px, transparent 50%),
+  radial-gradient(at 81% 66%, #C868DE 0px, transparent 50%);
+} */
 
-.lightMeshBg {
-  background: #e6e6f0;
-  background-image: radial-gradient(at 47% 96%, #a8abbd 0px, transparent 50%),
-    radial-gradient(at 61% 15%, #d5dde8 0px, transparent 50%),
-    radial-gradient(at 8% 16%, #c3ccde 0px, transparent 50%),
-    radial-gradient(at 85% 28%, #b2abeb 0px, transparent 50%),
-    radial-gradient(at 81% 66%, #ccd2e0 0px, transparent 50%);
-}
+/* .lightMeshBg { */
+/*   background: #C868DE; */
+/*   background-image: radial-gradient(at 47% 96%, #C868DE 0px, transparent 50%), */
+/*     radial-gradient(at 61% 15%, #d5dde8 0px, transparent 50%), */
+/*     radial-gradient(at 8% 16%, #c3ccde 0px, transparent 50%), */
+/*     radial-gradient(at 85% 28%, #b2abeb 0px, transparent 50%), */
+/*     radial-gradient(at 81% 66%, #ccd2e0 0px, transparent 50%); */
+/* } */

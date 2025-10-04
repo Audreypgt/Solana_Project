@@ -2,7 +2,7 @@
 
 import Box from "@mui/material/Box";
 import Drawer from "../Drawer";
-import { Logo } from "../Logo";
+// import { Logo } from "../Logo";
 import React, { useContext, useState } from "react";
 import ThemeSwitcherComponent from "./ThemeSwitcher";
 import Toolbar from "@mui/material/Toolbar";
@@ -16,7 +16,7 @@ export default function PrimarySearchAppBar() {
   return (
     <Box
       sx={{ flexGrow: 1 }}
-      className="w-full max-w-7xl mx-auto fixed top-4 left-1/2 -translate-x-1/2 bg-transparent dark:bg-gray-900 rounded-lg shadow-lg border border-0.5 border-gray-100 dark:border-gray-800"
+      className="w-full max-w-7xl mx-auto fixed top-4 left-1/2 -translate-x-1/2 bg-transparent dark:bg-pink-900 rounded-lg shadow-lg border border-0.5 border-pink-200 dark:border-pink-800"
     >
       <div className="w-full ">
         <Toolbar>
@@ -29,21 +29,21 @@ export default function PrimarySearchAppBar() {
             }}
           >
             <Drawer />
-            <Logo isDark={isDark} />
+            {/* <Logo isDark={isDark} /> */}
           </Box>
           <Box sx={{ flexGrow: 1 }}>
             <div className="hidden lg:flex items-center justify-end px-10 gap-6 ">
               <Link
                 href="/"
-                className="text-[#000000] dark:text-white text-[18px] font-bold navLink"
+                className="text-pink-600 dark:text-white text-[18px] font-bold navLink"
               >
-                Home
+                Loopers
               </Link>
               <Link
                 href="/basic"
-                className="text-[#000000] dark:text-white text-[18px] font-bold navLink"
+                className="text-pink-600 dark:text-white text-[18px] font-bold navLink"
               >
-                Basic
+                Lenders
               </Link>
             </div>
           </Box>
